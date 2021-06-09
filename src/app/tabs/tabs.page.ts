@@ -9,4 +9,12 @@ export class TabsPage {
 
   constructor() {}
 
+  test(){
+    console.log("tab2");
+  //  let sid = setTimeout(()=>{
+  //     document.getElementById("test").click();
+  //     clearTimeout(sid);
+  //   },300)
+  }
+
 }
