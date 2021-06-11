@@ -15,7 +15,7 @@ export class Tab2Page implements OnInit {
   private creatorPrivateKey:any = "04868f294d8ef6e1079752cd2e1f027a126b44ee27040d949a88f89bddc15f31";
   //private tokenId:any = "0xfeef09f58c64fede695bf447c20d011febd4e98bf184411f8e1eb902d87a8c55";
 
-  private tokenId:any = "0xfeef09f58c64fede695bf447c20d011febd4e98bf184411f8e1eb902d87a8c56";
+  private tokenId:any = "0xfeef09f58c64fede695bf447c20d011febd4e98bf184411f8e1eb902d87a8c58";
 
   constructor(private router: Router) {}
 
@@ -123,8 +123,8 @@ export class Tab2Page implements OnInit {
       //return receipt;
       return;
     } catch (err) {
-      console.error(String(err));
-      return;
+      alert("nft创建失败");
+      return "";
     }
   }
 
