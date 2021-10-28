@@ -16,19 +16,51 @@
   <!-- <div id="test">
     <ion-input placeholder="Enter Input" autofocus></ion-input>
   </div> -->
+  <p>{{tokenInfo}}</p>
+  <ion-item>
+    <ion-label>tokenId</ion-label>
+    <ion-input [(ngModel)]="tokenId"></ion-input>
+  </ion-item>
 
-  <ion-button (click)="test()">
-    test
-  </ion-button>
-
-  <ion-button (click)="tetsStickerContract()">
-    tetsStickerContract
-  </ion-button>
   <br/>
   <ion-button (click)="getTotalSupply()">
-    getTotalSupply()
+    getTokenInfo()
   </ion-button>
+  <br/>
+  <ion-button (click)="getExatTokenIfo()">
+    getExatTokenIfo()
+  </ion-button>
+  <br/>
+  <ion-button (click)="getBalance()">
+    getBalance()
+  </ion-button>
+  <br/>
+  <!-- <ion-button (click)="testSetApprovalForAll()">
+    testSetApprovalForAll()
+  </ion-button> -->
 
-
+  <!-- <ion-button (click)="createOrderForSale()">
+    createOrderForSale()
+  </ion-button> -->
+  <br/>
+  <!-- <ion-button (click)="getSellerCount()">
+    getSellerCount()
+  </ion-button> -->
+  <!-- <round-progress [current]="current" [max]="max"></round-progress> -->
+  <!-- <round-progress
+    [current]="current"
+    [max]="max"
+    [color]="'#45ccce'"
+    [background]="'#eaeaea'"
+    [radius]="125"
+    [stroke]="20"
+    [semicircle]="true"
+    [rounded]="true"
+    [clockwise]="false"
+    [responsive]="false"
+    [duration]="800"
+    [animation]="'easeInOutQuart'"
+    [animationDelay]="0"
+    (onRender)="doSomethingWithCurrentValue($event)"></round-progress> -->
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
